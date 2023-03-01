@@ -1,0 +1,16 @@
+review_list.api_config_page:
+  path: '/admin/config/review-api'
+  defaults:
+    _form: '\Drupal\review_list\Form\ReviewAPI'
+    _title: 'Review Api setting'
+  requirements: 
+    _permission: 'access content'
+
+review_list.listing:
+  path: '/review/listing'
+  defaults:
+    _controller: '\Drupal\review_list\Controller\ReviewListing::view'
+    _title: 'Review Listing'
+  requirements: 
+    _permission: 'access content'
+    no_cache: 'TRUE'
